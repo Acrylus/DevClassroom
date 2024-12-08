@@ -1,0 +1,126 @@
+// Variables for colors and fonts
+$primary-bg: #f9f9f9; // A light background suitable for learning environments
+$primary-color: #2c3e50; // Darker text color for readability
+$secondary-color: #3498db; // Blue for buttons and links, representing trust and communication
+$error-color: #e74c3c; // Red for error messages
+$link-color: #2980b9; // Lighter blue for links
+$link-hover-color: darken($link-color, 10%);
+$border-radius: 8px;
+$padding: 20px;
+$max-width: 400px; // Maximum width for better focus on the form
+$font-family: "Arial", sans-serif; // Clean and modern font
+
+// Main container for the registration form
+.register-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-bg;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: $padding;
+    margin: 50px auto;
+    max-width: $max-width;
+    transition: background-color 0.3s ease;
+    font-family: $font-family;
+
+    h2 {
+        margin-bottom: 20px;
+        color: $primary-color;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .register-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        label {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: $primary-color;
+        }
+
+        input,
+        select {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #bdc3c7; // Light border for the inputs
+            border-radius: $border-radius;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: $secondary-color; // Highlight border on focus
+                outline: none;
+            }
+
+            &:invalid {
+                border-color: $error-color; // Indicate invalid input
+            }
+        }
+
+        button {
+            padding: 12px;
+            background-color: $secondary-color;
+            color: white;
+            border: none;
+            border-radius: $border-radius;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $secondary-color, 10%;
+            }
+        }
+    }
+
+    // Login prompt styles
+    .login-prompt {
+        margin-top: 15px;
+        font-size: 14px;
+        color: $primary-color;
+
+        a {
+            color: $link-color;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $link-hover-color; // Change color on hover
+            }
+        }
+    }
+
+    // Error message styles
+    p {
+        margin-top: 15px;
+        color: $error-color;
+        font-size: 14px;
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
+    .register-form-container {
+        margin: 20px;
+        padding: 20px;
+        box-shadow: none;
+
+        h2 {
+            font-size: 22px;
+        }
+
+        input,
+        select {
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+    }
+}

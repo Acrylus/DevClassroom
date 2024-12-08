@@ -1,0 +1,51 @@
+.assessment-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    margin: 10px;
+    text-align: left;
+
+    .assessment-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .assessment-description {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .assessment-score {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #4caf50; /* Green for positive score */
+        margin-bottom: 10px;
+    }
+
+    .assessment-feedback {
+        font-size: 1rem;
+        color: #888;
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+
+    .assessment-attachment {
+        font-size: 0.9rem;
+        color: #007bff; /* Blue for attachment links */
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}

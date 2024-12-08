@@ -1,0 +1,31 @@
+.subject-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+
+    .subject-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .subject-code {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .subject-creator {
+        font-size: 1rem;
+        color: #777;
+    }
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}

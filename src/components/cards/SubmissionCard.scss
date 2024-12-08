@@ -1,0 +1,65 @@
+// SubmissionCard.scss
+
+.submission-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.submission-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 8px;
+}
+
+.submission-student {
+    font-size: 1rem;
+    color: #666666;
+    margin: 4px 0;
+}
+
+.submission-score {
+    font-size: 1rem;
+    color: #4caf50;
+    margin: 4px 0;
+
+    strong {
+        color: #2e7d32;
+    }
+}
+
+.submission-feedback {
+    font-size: 0.9rem;
+    color: #555555;
+    margin: 4px 0;
+
+    strong {
+        color: #1e88e5;
+    }
+}
+
+.submission-file {
+    font-size: 0.9rem;
+    color: #1e88e5;
+    margin: 4px 0;
+
+    a {
+        color: #1976d2;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

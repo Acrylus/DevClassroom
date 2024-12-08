@@ -1,0 +1,28 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #444;
+    }
+
+    .subjects-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #888;
+    }
+}

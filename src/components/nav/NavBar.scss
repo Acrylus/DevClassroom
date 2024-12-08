@@ -1,0 +1,76 @@
+$primary-color: #0078d4;
+$secondary-color: #f3f2f1;
+$hover-color: #005a9e;
+$font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: $primary-color;
+    color: white;
+    font-family: $font-family;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .navbar-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 1.5rem;
+
+        li {
+            list-style: none;
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1rem;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+
+    .navbar-menu {
+        .navbar-login {
+            color: white;
+            text-decoration: none;
+            background-color: $secondary-color;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .navbar-menu {
+        margin-top: 1rem;
+    }
+}
