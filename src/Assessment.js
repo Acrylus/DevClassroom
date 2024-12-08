@@ -118,7 +118,6 @@ const Assessment = () => {
     };
 
     if (loading) return <CircularProgress />;
-    if (error) return <Alert severity="error">{error}</Alert>;
     if (!assessment) return <Alert severity="info">No assessment found</Alert>;
 
     return (

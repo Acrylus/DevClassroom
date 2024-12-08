@@ -52,7 +52,7 @@ const Subject = () => {
         event.preventDefault();
 
         if (!newAssessment.attachment) {
-            console.error("No attachment selected");
+            alert("No attachment selected");
             return;
         }
 
@@ -187,6 +187,15 @@ const Subject = () => {
                             }
                         />
                     </Button>
+                    {newAssessment.attachment ? (
+                        <Typography sx={{ mt: 1 }}>
+                            Selected file: {newAssessment.attachment.name}
+                        </Typography>
+                    ) : (
+                        <Typography sx={{ mt: 1, color: "red" }}>
+                            No file selected. Please upload a file.
+                        </Typography>
+                    )}
                 </DialogContent>
                 <DialogActions>
                     <Button
